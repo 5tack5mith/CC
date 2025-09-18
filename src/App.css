@@ -1,0 +1,113 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Full container */
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.6s ease;
+  padding: 20px;
+}
+
+/* White card */
+.card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px 40px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  animation: fadeIn 0.6s ease;
+}
+
+/* Title */
+.title {
+  font-size: 1.8rem;
+  color: #ff4d88;
+  margin-bottom: 20px;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Highlight date */
+.highlight {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+  margin: 8px 0;
+}
+
+/* Counter text */
+.counter {
+  font-size: 1.1rem;
+  color: #666;
+  margin: 12px 0 20px 0;
+}
+
+/* Input */
+input[type="date"] {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+/* Buttons */
+button {
+  border: none;
+  outline: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* Reset button */
+button:last-child {
+  background-color: #444 !important;
+}
+
+/* Dropdown (theme selector) */
+select {
+  border: 1px solid #ddd;
+  padding: 6px 10px;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
